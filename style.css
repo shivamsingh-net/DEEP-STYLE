@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    font-family:system-ui, sans-serif;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+nav{ 
+    padding: 0px 60px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left{
+ font-size: 20px; 
+}
+#center{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#center h3{
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#center h3:hover{
+    color: rgb(97, 99, 99);
+}
+#right i{
+    margin: 10px;
+ padding: 10px;
+ cursor: pointer;
+}
+.ri-search-line{
+    font-size: 20px;
+}
+.ri-shopping-cart-2-fill{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50px;
+    
+}
+#top{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top2{
+     border-top: 1px solid #00000044;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 90%;
+}
+#top2 h3{
+    font-size: 62px;
+    text-align: center;
+}
+#img1{
+ height: 45px;
+ position: absolute;
+top: 20px;
+ left: 60px;
+}
+#img2{
+    height: 40px;
+ position: absolute;
+ bottom: 0;
+ left: 300px;
+}
+#img3{
+    height: 40px;
+ position: absolute;
+ top: 30px;
+ right: 70px;
+}
+#img4{
+    height: 130px;
+ position: absolute;
+ bottom: -80px;
+ right: 100px;
+}
+#img5{
+    height: 60px;
+ position: absolute;
+ bottom: -33px;
+}
+#summer{
+    position: absolute;
+    font-size: 13px;
+    bottom: 20px;
+    left: 64px;
+    font-weight: 500;
+}
+section{
+     height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#grid{
+    gap: 10px;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows:min-content(7% 7% 14% 14% 14% 14% 14% 7% 7%) ;
+    grid-template-areas: 
+    /* ". . . . ." */
+    "right-top . box4 box5  ."
+    ". box2 box4 box5 box7"
+    "box1 box2 box4 box5 box7"
+    "box1 box3 box4 box5 box7"
+    "box1 box3 box4 box6 box7"
+    "box1 box3 box4 box6 left-bt" 
+    "right-bt box3 box4 . ."
+    /* ". . . . ." */
+    ;
+}
+
+#box1{
+    border-radius: 20px;
+    grid-area: box1;
+    background-image: url(./image\ 1.png);
+    background-size: cover;
+}
+
+#box2{
+    border-radius: 20px;
+     grid-area: box2;
+    background-image: url(./image\ 2.png);
+    background-size: cover;
+}
+#box3{
+    margin-bottom: 20px;
+    border-radius: 20px;
+     grid-area: box3;
+     background-image: url(./image\ 3.png);
+    background-size: cover;
+}
+#box4{
+    border-radius: 20px;
+     grid-area: box4;
+     background-image: url(./image\ 4.png);
+    background-size: cover;
+    background-position: center ;
+}
+#box5{
+    margin-top: 20px;
+    border-radius: 20px;
+     grid-area: box5;
+     background-image: url(./image\ 5.png);
+    background-size: cover;
+}
+#box6{
+    border-radius: 20px;
+     grid-area: box6;
+     background-image: url(./image\ 6.png);
+    background-size: cover;
+}
+#box7{
+    border-radius: 20px;
+    grid-area: box7;
+    background-image: url(./image\ 7.png);
+    background-size: cover;
+}
+#right-top{
+    grid-area: right-top;
+}
+#right-top h3{
+    font-weight: 600;
+}
+#right-bt{
+    display: flex;
+    align-items: end;
+    grid-area: right-bt;
+}
+#right-bt img{
+    height: 34px;
+    width: 34px;
+}
+
+#left-bt{
+    grid-area: left-bt;
+}
+#left-bt h3{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px; 
+    width: 100%;
+}
+#img8{
+position: absolute;
+height: 50px;
+left: 500px;
+}
+#img9{
+ height: 50px;
+ position: absolute;
+ right: 100px;
+ bottom: -110px;
+}
+#img10{
+ height: 30px;
+ position: absolute;
+right: 370px;
+bottom: -210px;
+}
+#msg{
+    height: fit-content;
+}
+#msg p{
+ font-size: 16px;
+ font-weight: 600;
+ padding-bottom: 20px;
+}
+#msg img{
+    width: 200px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#blog{
+ display: flex;
+ gap: 10px;
+}
+#no h4{
+    padding-top: 26px;
+ font-size: 56px;
+ font-weight: 300;
+}
+#pera p{
+padding-bottom: 10px;
+padding-top: 10px;
+font-size: 13px;
+}
+#pera h3{
+    font-weight: 500;
+}
+#blog i{
+    margin-top: 50px;
+    font-size: 36px;
+    padding-left: 40px;
+
+}
